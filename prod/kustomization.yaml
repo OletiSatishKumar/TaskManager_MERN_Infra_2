@@ -1,0 +1,10 @@
+namespace: prod
+
+resources:
+  - ../base
+  - namespace.yaml
+
+patches:
+  - path: patch-deployment.yaml
+    target:
+      kind: Deployment

@@ -1,0 +1,26 @@
+TaskManager_MERN_Infra/
+├── argocd/
+│   ├── dev-application.yaml
+│   └── prod-application.yaml
+├── base/
+│   ├── backend-deployment.yaml
+│   ├── backend-service.yaml
+│   ├── frontend-deployment.yaml
+│   ├── frontend-service.yaml
+│   ├── mongo-deployment.yaml
+│   ├── mongo-service.yaml
+│   ├── configmap.yaml
+│   ├── secret.yaml
+│   └── kustomization.yaml
+│
+├── dev/
+│   ├── patch-deployment.yaml       # Contains image overrides for dev
+│   ├── namespace.yaml              # Defines 'dev' namespace
+│   ├── kustomization.yaml
+│
+├── prod/
+│   ├── patch-deployment.yaml       # Contains image overrides for prod
+│   ├── namespace.yaml              # Defines 'prod' namespace
+│   ├── kustomization.yaml
+│
+└── README.md
